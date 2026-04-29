@@ -12,33 +12,26 @@ export default function Hero({ onBooking }: HeroProps) {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-end overflow-hidden"
     >
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-right md:bg-[center_right] bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-top lg:bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/foto%20mama.png')",
+          backgroundImage: "url('/hero-bg.png')",
         }}
       />
       {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/80 via-neutral-900/60 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/70 via-neutral-900/30 to-transparent" />
+      <div className="absolute inset-0 bg-neutral-900/20 lg:bg-transparent" />
 
-      {/* Decorative dots */}
-      <div className="absolute top-24 right-12 w-48 h-48 opacity-10">
-        <div className="grid grid-cols-6 gap-3">
-          {Array.from({ length: 36 }).map((_, i) => (
-            <div key={i} className="w-1.5 h-1.5 rounded-full bg-white" />
-          ))}
-        </div>
-      </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-20">
+
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-16">
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((s) => (
                 <Star key={s} className="w-3 h-3 fill-champagne-400 text-champagne-400" />
@@ -50,7 +43,7 @@ export default function Hero({ onBooking }: HeroProps) {
           </div>
 
           {/* Heading */}
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
             Tu mejor versión{' '}
             <em className="text-blush-300 not-italic">comienza</em>{' '}
             aquí
