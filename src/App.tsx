@@ -7,6 +7,7 @@ import Testimonials from './components/Testimonials';
 import About from './components/About';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <About />
       <Footer />
       <BookingModal isOpen={modalOpen} onClose={closeBooking} />
+      <WhatsAppButton />
     </div>
   );
 }
