@@ -1,5 +1,4 @@
 import { ArrowDown, Star } from 'lucide-react';
-import heroImage from '../public/foto mama.png';
 
 type HeroProps = {
   onBooking: () => void;
@@ -17,9 +16,9 @@ export default function Hero({ onBooking }: HeroProps) {
     >
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-right md:bg-[center_right] bg-no-repeat"
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: "url('/foto%20mama.png')",
         }}
       />
       {/* Overlay gradient */}
@@ -35,8 +34,9 @@ export default function Hero({ onBooking }: HeroProps) {
         </div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-24 pb-20">
-        <div className="max-w-2xl">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-2xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
             <div className="flex gap-0.5">
@@ -92,6 +92,9 @@ export default function Hero({ onBooking }: HeroProps) {
               </div>
             ))}
           </div>
+          </div>
+          {/* Spacer to keep the right side clear for the image */}
+          <div className="hidden lg:block" />
         </div>
       </div>
 
