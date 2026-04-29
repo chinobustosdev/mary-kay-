@@ -1,4 +1,5 @@
 import { ArrowDown, Star } from 'lucide-react';
+import heroImage from '../public/foto mama.png';
 
 type HeroProps = {
   onBooking: () => void;
@@ -18,8 +19,7 @@ export default function Hero({ onBooking }: HeroProps) {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage:
-            'url(https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          backgroundImage: `url(${heroImage})`,
         }}
       />
       {/* Overlay gradient */}
