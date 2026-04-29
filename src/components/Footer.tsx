@@ -47,7 +47,7 @@ export default function Footer() {
             {/* Social links */}
             <div className="flex gap-4 mb-10">
               <a
-                href="#"
+                href="https://www.instagram.com/danimoyamk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 aria-label="Instagram"
                 className="w-12 h-12 rounded-2xl bg-neutral-50 border border-neutral-100 flex items-center justify-center hover:bg-blush-500 hover:border-blush-500 group transition-all duration-300"
               >
@@ -74,8 +74,8 @@ export default function Footer() {
             {/* Quick info */}
             <div className="space-y-3">
               {[
-                { label: 'Horario', value: 'Lun – Sáb, 9:00 – 18:00' },
-                { label: 'WhatsApp', value: '+54 9 261 652-189' },
+                { label: 'Horario', value: 'Lun – Vie, 9:00 – 18:00' },
+                { label: 'WhatsApp', value: '+54 9 261 565-2189' },
                 { label: 'Email', value: 'daniela@marykay.com.ar' },
               ].map(item => (
                 <div key={item.label} className="flex items-center gap-3">
